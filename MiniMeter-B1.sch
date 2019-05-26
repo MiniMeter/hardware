@@ -1,0 +1,1715 @@
+EESchema Schematic File Version 4
+LIBS:MiniMeter-B1-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MiniMeter-B1"
+Date "2019-03-11"
+Rev "2.1"
+Comp "M. Panuś"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L project.lib:TactSwitch SW4
+U 1 1 5A842E3B
+P 7125 5375
+F 0 "SW4" V 6925 5500 50  0000 C CNN
+F 1 "uSwitch 3x6mm" H 7125 5265 50  0001 C CNN
+F 2 "project.pretty:THT_uSwitch_3x6mm" H 7125 5423 60  0001 C CNN
+F 3 "" H 7125 5423 60  0001 C CNN
+	1    7125 5375
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:TactSwitch SW3
+U 1 1 5A843008
+P 6825 5375
+F 0 "SW3" V 6625 5500 50  0000 C CNN
+F 1 "uSwitch 3x6mm" H 6825 5265 50  0001 C CNN
+F 2 "project.pretty:THT_uSwitch_3x6mm" H 6825 5423 60  0001 C CNN
+F 3 "" H 6825 5423 60  0001 C CNN
+	1    6825 5375
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:TactSwitch SW2
+U 1 1 5A84304C
+P 6525 5375
+F 0 "SW2" V 6325 5525 50  0000 C CNN
+F 1 "uSwitch 3x6mm" H 6525 5265 50  0001 C CNN
+F 2 "project.pretty:THT_uSwitch_3x6mm" H 6525 5423 60  0001 C CNN
+F 3 "" H 6525 5423 60  0001 C CNN
+	1    6525 5375
+	0    -1   1    0   
+$EndComp
+$Comp
+L project.lib:TactSwitch SW1
+U 1 1 5A84309B
+P 6225 5375
+F 0 "SW1" V 6025 5500 50  0000 C CNN
+F 1 "uSwitch 3x6mm" H 6225 5265 50  0001 C CNN
+F 2 "project.pretty:THT_uSwitch_3x6mm" H 6225 5423 60  0001 C CNN
+F 3 "" H 6225 5423 60  0001 C CNN
+	1    6225 5375
+	0    -1   1    0   
+$EndComp
+$Comp
+L project.lib:Display LCD1
+U 1 1 5A843BF1
+P 8125 3175
+F 0 "LCD1" H 8125 3650 50  0000 C CNN
+F 1 "Nokia 5110 LCD" H 8125 3450 50  0000 C CNN
+F 2 "project.pretty:LCD_Nokia-5110" V 7925 2725 60  0001 C CNN
+F 3 "" V 7925 2725 60  0001 C CNN
+	1    8125 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Capacitor C10
+U 1 1 5A84A235
+P 7825 3775
+F 0 "C10" H 7950 3675 50  0000 C CNN
+F 1 "1u" H 7950 3875 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 7863 3625 50  0001 C CNN
+F 3 "" H 7825 3775 50  0000 C CNN
+	1    7825 3775
+	-1   0    0    1   
+$EndComp
+$Comp
+L project.lib:GND #PWR01
+U 1 1 5A84A315
+P 7825 3900
+F 0 "#PWR01" H 7825 3950 50  0001 C CNN
+F 1 "GND" H 7825 3750 50  0001 C CNN
+F 2 "" H 7825 3925 50  0001 C CNN
+F 3 "" H 7825 3925 50  0001 C CNN
+	1    7825 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR02
+U 1 1 5A84A5D8
+P 8525 3900
+F 0 "#PWR02" H 8525 3950 50  0001 C CNN
+F 1 "GND" H 8525 3750 50  0001 C CNN
+F 2 "" H 8525 3925 50  0001 C CNN
+F 3 "" H 8525 3925 50  0001 C CNN
+	1    8525 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR03
+U 1 1 5A84B25F
+P 6675 5650
+F 0 "#PWR03" H 6675 5700 50  0001 C CNN
+F 1 "GND" H 6675 5500 50  0001 C CNN
+F 2 "" H 6675 5675 50  0001 C CNN
+F 3 "" H 6675 5675 50  0001 C CNN
+	1    6675 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:ATxmega32E5 U1
+U 1 1 5B01D727
+P 6675 4275
+F 0 "U1" H 6675 4400 50  0000 C BNN
+F 1 "ATxmega32E5" H 6675 4300 50  0000 C BNN
+F 2 "project.pretty:SMD_TQFP-32_7x7mm" H 6650 4400 50  0001 C CIN
+F 3 "" H 7360 3880 50  0000 C CNN
+F 4 "ATXMEGA32E5-AU" H 6675 4275 50  0001 C CNN "manf#"
+	1    6675 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Resistor R1
+U 1 1 5B01E067
+P 3225 4375
+F 0 "R1" V 3175 4200 50  0000 C CNN
+F 1 "0R1" V 3275 4200 50  0000 C CNN
+F 2 "project.pretty:SMD_3216_(1206)" H 3225 4375 60  0001 C CNN
+F 3 "" H 3225 4375 60  0001 C CNN
+	1    3225 4375
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:MCP1501 U2
+U 1 1 5B01E4D0
+P 5500 3500
+F 0 "U2" H 5500 3825 50  0000 C CNN
+F 1 "MCP1501" H 5500 3750 50  0000 C CNN
+F 2 "project.pretty:SMD_SOT-23-6" H 6200 4175 60  0001 C CNN
+F 3 "" H 6200 4175 60  0001 C CNN
+	1    5500 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3225 4725 2    40   BiDi ~ 0
+V-
+Text GLabel 3225 4025 2    40   BiDi ~ 0
+V+
+$Comp
+L project.lib:Resistor R8
+U 1 1 5B06A3D4
+P 4650 4775
+F 0 "R8" H 4725 4675 50  0000 C CNN
+F 1 "50k" H 4575 4675 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4650 4775 60  0001 C CNN
+F 3 "" H 4650 4775 60  0001 C CNN
+	1    4650 4775
+	-1   0    0    1   
+$EndComp
+$Comp
+L project.lib:Capacitor C5
+U 1 1 5B06A3E0
+P 5075 5005
+F 0 "C5" H 5175 5110 50  0000 C CNN
+F 1 "10n" H 5200 4910 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 5113 4855 50  0001 C CNN
+F 3 "" H 5075 5005 50  0000 C CNN
+	1    5075 5005
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR04
+U 1 1 5B06A3EB
+P 4875 5175
+F 0 "#PWR04" H 4875 5225 50  0001 C CNN
+F 1 "GND" H 4875 5025 50  0001 C CNN
+F 2 "" H 4875 5200 50  0001 C CNN
+F 3 "" H 4875 5200 50  0001 C CNN
+	1    4875 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR05
+U 1 1 5B06A3F1
+P 5075 5175
+F 0 "#PWR05" H 5075 5225 50  0001 C CNN
+F 1 "GND" H 5075 5025 50  0001 C CNN
+F 2 "" H 5075 5200 50  0001 C CNN
+F 3 "" H 5075 5200 50  0001 C CNN
+	1    5075 5175
+	1    0    0    -1  
+$EndComp
+Text GLabel 4475 4775 0    40   BiDi ~ 0
+V-
+$Comp
+L project.lib:Resistor R7
+U 1 1 5B06A3FA
+P 4650 3975
+F 0 "R7" H 4725 3875 50  0000 C CNN
+F 1 "50k" H 4575 3875 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4650 3975 60  0001 C CNN
+F 3 "" H 4650 3975 60  0001 C CNN
+	1    4650 3975
+	-1   0    0    1   
+$EndComp
+$Comp
+L project.lib:GND #PWR06
+U 1 1 5B06A411
+P 4875 4375
+F 0 "#PWR06" H 4875 4425 50  0001 C CNN
+F 1 "GND" H 4875 4225 50  0001 C CNN
+F 2 "" H 4875 4400 50  0001 C CNN
+F 3 "" H 4875 4400 50  0001 C CNN
+	1    4875 4375
+	1    0    0    -1  
+$EndComp
+Text GLabel 4475 3975 0    40   BiDi ~ 0
+V+
+Text GLabel 4100 3550 2    40   BiDi ~ 0
+SDA
+Text GLabel 4650 3300 2    40   BiDi ~ 0
+SCL
+Text GLabel 4575 5325 2    40   BiDi ~ 0
+TxD
+$Comp
+L project.lib:Resistor R9
+U 1 1 5B06A400
+P 4875 4200
+F 0 "R9" V 4925 4350 50  0000 C CNN
+F 1 "50k" V 4825 4350 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4875 4200 60  0001 C CNN
+F 3 "" H 4875 4200 60  0001 C CNN
+	1    4875 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project.lib:GND #PWR07
+U 1 1 5B06A417
+P 5075 4375
+F 0 "#PWR07" H 5075 4425 50  0001 C CNN
+F 1 "GND" H 5075 4225 50  0001 C CNN
+F 2 "" H 5075 4400 50  0001 C CNN
+F 3 "" H 5075 4400 50  0001 C CNN
+	1    5075 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Capacitor C4
+U 1 1 5B06A406
+P 5075 4195
+F 0 "C4" H 5175 4290 50  0000 C CNN
+F 1 "10n" H 5200 4090 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 5113 4045 50  0001 C CNN
+F 3 "" H 5075 4195 50  0000 C CNN
+	1    5075 4195
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 5325 2    40   BiDi ~ 0
+RxD
+$Comp
+L project.lib:Resistor R6
+U 1 1 5B06B8AB
+P 4300 5325
+F 0 "R6" H 4365 5425 50  0000 C CNN
+F 1 "1k" H 4235 5425 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4300 5325 60  0001 C CNN
+F 3 "" H 4300 5325 60  0001 C CNN
+	1    4300 5325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR08
+U 1 1 5B06B8B5
+P 4525 5650
+F 0 "#PWR08" H 4525 5700 50  0001 C CNN
+F 1 "GND" H 4525 5500 50  0001 C CNN
+F 2 "" H 4525 5675 50  0001 C CNN
+F 3 "" H 4525 5675 50  0001 C CNN
+	1    4525 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6025 3925 0    40   BiDi ~ 0
+RxD
+$Comp
+L project.lib:Zener D5
+U 1 1 5B06BB6D
+P 4525 5500
+F 0 "D5" V 4555 5655 50  0000 C CNN
+F 1 "3V6" V 4650 5635 50  0000 C CNN
+F 2 "project.pretty:SMD_SOD-323" H 4525 5500 50  0001 C CNN
+F 3 "" H 4525 5500 50  0000 C CNN
+	1    4525 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:Resistor R2
+U 1 1 5B06C175
+P 3525 5325
+F 0 "R2" H 3585 5425 50  0000 C CNN
+F 1 "1k" H 3460 5425 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 3525 5325 60  0001 C CNN
+F 3 "" H 3525 5325 60  0001 C CNN
+	1    3525 5325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR09
+U 1 1 5B06C17F
+P 3750 5650
+F 0 "#PWR09" H 3750 5700 50  0001 C CNN
+F 1 "GND" H 3750 5500 50  0001 C CNN
+F 2 "" H 3750 5675 50  0001 C CNN
+F 3 "" H 3750 5675 50  0001 C CNN
+	1    3750 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6025 4025 0    40   BiDi ~ 0
+TxD
+$Comp
+L project.lib:Zener D2
+U 1 1 5B06C187
+P 3750 5500
+F 0 "D2" V 3785 5655 50  0000 C CNN
+F 1 "3V6" V 3875 5630 50  0000 C CNN
+F 2 "project.pretty:SMD_SOD-323" H 3750 5500 50  0001 C CNN
+F 3 "" H 3750 5500 50  0000 C CNN
+	1    3750 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:Resistor R3
+U 1 1 5B06C424
+P 3825 3550
+F 0 "R3" H 3890 3655 50  0000 C CNN
+F 1 "1k" H 3760 3655 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 3825 3550 60  0001 C CNN
+F 3 "" H 3825 3550 60  0001 C CNN
+	1    3825 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR010
+U 1 1 5B06C42E
+P 4050 3875
+F 0 "#PWR010" H 4050 3925 50  0001 C CNN
+F 1 "GND" H 4050 3725 50  0001 C CNN
+F 2 "" H 4050 3900 50  0001 C CNN
+F 3 "" H 4050 3900 50  0001 C CNN
+	1    4050 3875
+	1    0    0    -1  
+$EndComp
+Text GLabel 6025 3725 0    40   BiDi ~ 0
+SCL
+$Comp
+L project.lib:Zener D3
+U 1 1 5B06C436
+P 4050 3725
+F 0 "D3" V 4085 3880 50  0000 C CNN
+F 1 "3V6" V 4175 3850 50  0000 C CNN
+F 2 "project.pretty:SMD_SOD-323" H 4050 3725 50  0001 C CNN
+F 3 "" H 4050 3725 50  0000 C CNN
+	1    4050 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:Resistor R5
+U 1 1 5B06C43D
+P 4375 3300
+F 0 "R5" H 4435 3405 50  0000 C CNN
+F 1 "1k" H 4310 3405 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4375 3300 60  0001 C CNN
+F 3 "" H 4375 3300 60  0001 C CNN
+	1    4375 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR011
+U 1 1 5B06C447
+P 4600 3625
+F 0 "#PWR011" H 4600 3675 50  0001 C CNN
+F 1 "GND" H 4600 3475 50  0001 C CNN
+F 2 "" H 4600 3650 50  0001 C CNN
+F 3 "" H 4600 3650 50  0001 C CNN
+	1    4600 3625
+	1    0    0    -1  
+$EndComp
+Text GLabel 6025 3825 0    40   BiDi ~ 0
+SDA
+$Comp
+L project.lib:Zener D4
+U 1 1 5B06C44F
+P 4600 3475
+F 0 "D4" V 4635 3635 50  0000 C CNN
+F 1 "3V6" V 4725 3600 50  0000 C CNN
+F 2 "project.pretty:SMD_SOD-323" H 4600 3475 50  0001 C CNN
+F 3 "" H 4600 3475 50  0000 C CNN
+	1    4600 3475
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:GND #PWR012
+U 1 1 5B070B39
+P 5500 3925
+F 0 "#PWR012" H 5500 3975 50  0001 C CNN
+F 1 "GND" H 5500 3775 50  0001 C CNN
+F 2 "" H 5500 3950 50  0001 C CNN
+F 3 "" H 5500 3950 50  0001 C CNN
+	1    5500 3925
+	1    0    0    -1  
+$EndComp
+Text GLabel 8125 3525 3    40   BiDi ~ 0
+SCLK
+Text GLabel 8025 3525 3    40   BiDi ~ 0
+SDIN
+Text GLabel 8225 3525 3    40   BiDi ~ 0
+DC
+Text GLabel 8325 3525 3    40   BiDi ~ 0
+SCE
+Text GLabel 8425 3525 3    40   BiDi ~ 0
+RST
+Text GLabel 7325 3675 2    40   BiDi ~ 0
+SCLK
+Text GLabel 7325 3775 2    40   BiDi ~ 0
+RST
+Text GLabel 7325 3875 2    40   BiDi ~ 0
+SDIN
+Text GLabel 7325 3975 2    40   BiDi ~ 0
+SCE
+Text GLabel 7325 4075 2    40   BiDi ~ 0
+DC
+$Comp
+L project.lib:GND #PWR013
+U 1 1 5B074469
+P 6375 4975
+F 0 "#PWR013" H 6375 5025 50  0001 C CNN
+F 1 "GND" H 6375 4825 50  0001 C CNN
+F 2 "" H 6375 5000 50  0001 C CNN
+F 3 "" H 6375 5000 50  0001 C CNN
+	1    6375 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR014
+U 1 1 5B074880
+P 6975 4975
+F 0 "#PWR014" H 6975 5025 50  0001 C CNN
+F 1 "GND" H 6975 4825 50  0001 C CNN
+F 2 "" H 6975 5000 50  0001 C CNN
+F 3 "" H 6975 5000 50  0001 C CNN
+	1    6975 4975
+	1    0    0    -1  
+$EndComp
+Text GLabel 6025 4325 0    40   BiDi ~ 0
+IOUT
+$Comp
+L project.lib:PolyFuse F1
+U 1 1 5B076A21
+P 3200 2700
+F 0 "F1" H 3200 2820 50  0000 C CNN
+F 1 "100mA" H 3200 2575 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 3200 2700 60  0001 C CNN
+F 3 "" H 3200 2700 60  0001 C CNN
+	1    3200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Conn-1x3 Z3
+U 1 1 5B078044
+P 5275 5475
+F 0 "Z3" H 5470 5475 50  0000 C CNN
+F 1 "goldpin 1x3" H 5275 5225 50  0001 C CNN
+F 2 "project.pretty:THT_Goldpin-1x3" H 5175 5425 60  0001 C CNN
+F 3 "" H 5175 5425 60  0001 C CNN
+	1    5275 5475
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:AP7333 U3
+U 1 1 5B0795DC
+P 4450 2775
+F 0 "U3" H 4275 3000 50  0000 C CNN
+F 1 "AP7333" H 4525 3000 50  0000 C CNN
+F 2 "project.pretty:SMD_SOT-23-3" H 4225 2700 60  0001 C CNN
+F 3 "" H 4225 2700 60  0001 C CNN
+	1    4450 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Capacitor C2
+U 1 1 5B079B6C
+P 4025 2875
+F 0 "C2" H 4150 2975 50  0000 C CNN
+F 1 "10u" H 4150 2760 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4063 2725 50  0001 C CNN
+F 3 "" H 4025 2875 50  0000 C CNN
+	1    4025 2875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:Capacitor C3
+U 1 1 5B079C94
+P 4875 2875
+F 0 "C3" H 5025 2975 50  0000 C CNN
+F 1 "10u" H 5050 2775 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4913 2725 50  0001 C CNN
+F 3 "" H 4875 2875 50  0000 C CNN
+	1    4875 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR015
+U 1 1 5B07AA21
+P 4875 3025
+F 0 "#PWR015" H 4875 3075 50  0001 C CNN
+F 1 "GND" H 4875 2875 50  0001 C CNN
+F 2 "" H 4875 3050 50  0001 C CNN
+F 3 "" H 4875 3050 50  0001 C CNN
+	1    4875 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR016
+U 1 1 5B07AB0A
+P 4025 3025
+F 0 "#PWR016" H 4025 3075 50  0001 C CNN
+F 1 "GND" H 4025 2875 50  0001 C CNN
+F 2 "" H 4025 3050 50  0001 C CNN
+F 3 "" H 4025 3050 50  0001 C CNN
+	1    4025 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR017
+U 1 1 5B07AB84
+P 4450 3025
+F 0 "#PWR017" H 4450 3075 50  0001 C CNN
+F 1 "GND" H 4450 2875 50  0001 C CNN
+F 2 "" H 4450 3050 50  0001 C CNN
+F 3 "" H 4450 3050 50  0001 C CNN
+	1    4450 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:VIN #PWR018
+U 1 1 5B07AE2D
+P 3475 3875
+F 0 "#PWR018" H 3475 3800 50  0001 C CNN
+F 1 "VIN" H 3475 4025 50  0000 C CNN
+F 2 "" H 3475 3875 50  0001 C CNN
+F 3 "" H 3475 3875 50  0001 C CNN
+	1    3475 3875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:Zener D1
+U 1 1 5B07B170
+P 3450 2875
+F 0 "D1" V 3500 2675 50  0000 C CNN
+F 1 "6V2" V 3585 2675 50  0000 C CNN
+F 2 "project.pretty:SMD_SOD-123" H 3450 2875 50  0001 C CNN
+F 3 "" H 3450 2875 50  0000 C CNN
+	1    3450 2875
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:GND #PWR019
+U 1 1 5B07B3E4
+P 3450 3025
+F 0 "#PWR019" H 3450 3075 50  0001 C CNN
+F 1 "GND" H 3450 2875 50  0001 C CNN
+F 2 "" H 3450 3050 50  0001 C CNN
+F 3 "" H 3450 3050 50  0001 C CNN
+	1    3450 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:VIN #PWR020
+U 1 1 5B07D431
+P 2975 2650
+F 0 "#PWR020" H 2975 2575 50  0001 C CNN
+F 1 "VIN" H 2975 2800 50  0000 C CNN
+F 2 "" H 2975 2650 50  0001 C CNN
+F 3 "" H 2975 2650 50  0001 C CNN
+	1    2975 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR021
+U 1 1 5B080623
+P 5500 5650
+F 0 "#PWR021" H 5500 5700 50  0001 C CNN
+F 1 "GND" H 5500 5500 50  0001 C CNN
+F 2 "" H 5500 5675 50  0001 C CNN
+F 3 "" H 5500 5675 50  0001 C CNN
+	1    5500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Resistor R20
+U 1 1 5B088065
+P 7975 5300
+F 0 "R20" H 8060 5395 50  0000 C CNN
+F 1 "100" H 7885 5395 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 7975 5300 60  0001 C CNN
+F 3 "" H 7975 5300 60  0001 C CNN
+	1    7975 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Resistor R18
+U 1 1 5B0884C4
+P 7975 4850
+F 0 "R18" H 8060 4945 50  0000 C CNN
+F 1 "1k" H 7885 4945 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 7975 4850 60  0001 C CNN
+F 3 "" H 7975 4850 60  0001 C CNN
+	1    7975 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Resistor R17
+U 1 1 5B088564
+P 7975 4625
+F 0 "R17" H 8060 4720 50  0000 C CNN
+F 1 "1k" H 7885 4720 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 7975 4625 60  0001 C CNN
+F 3 "" H 7975 4625 60  0001 C CNN
+	1    7975 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Resistor R12
+U 1 1 5B08AA86
+P 5700 5100
+F 0 "R12" H 5765 5010 50  0000 C CNN
+F 1 "1k" H 5610 5010 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 5700 5100 60  0001 C CNN
+F 3 "" H 5700 5100 60  0001 C CNN
+	1    5700 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:Resistor R13
+U 1 1 5B08AE9E
+P 5900 5100
+F 0 "R13" H 5835 5200 50  0000 C CNN
+F 1 "1k" H 5990 5200 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 5900 5100 60  0001 C CNN
+F 3 "" H 5900 5100 60  0001 C CNN
+	1    5900 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project.lib:Resistor R11
+U 1 1 5B08B823
+P 5500 5100
+F 0 "R11" H 5420 5200 50  0000 C CNN
+F 1 "10k" H 5590 5200 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 5500 5100 60  0001 C CNN
+F 3 "" H 5500 5100 60  0001 C CNN
+	1    5500 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project.lib:FerriteBead FB2
+U 1 1 5B08AAE3
+P 6200 2700
+F 0 "FB2" H 6200 2850 50  0000 C CNN
+F 1 "ferrite bead" H 6200 2625 50  0001 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 6200 2700 60  0001 C CNN
+F 3 "" H 6200 2700 60  0001 C CNN
+	1    6200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Capacitor C7
+U 1 1 5B08AF42
+P 5925 2875
+F 0 "C7" H 6075 2975 50  0000 C CNN
+F 1 "100n" H 6100 2775 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 5963 2725 50  0001 C CNN
+F 3 "" H 5925 2875 50  0000 C CNN
+	1    5925 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Capacitor C6
+U 1 1 5B08B0AD
+P 6475 2875
+F 0 "C6" H 6325 2975 50  0000 C CNN
+F 1 "10n" H 6325 2775 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 6513 2725 50  0001 C CNN
+F 3 "" H 6475 2875 50  0000 C CNN
+	1    6475 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR026
+U 1 1 5B08B325
+P 5925 3025
+F 0 "#PWR026" H 5925 3075 50  0001 C CNN
+F 1 "GND" H 5925 2875 50  0001 C CNN
+F 2 "" H 5925 3050 50  0001 C CNN
+F 3 "" H 5925 3050 50  0001 C CNN
+	1    5925 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR027
+U 1 1 5B08B3EA
+P 6475 3025
+F 0 "#PWR027" H 6475 3075 50  0001 C CNN
+F 1 "GND" H 6475 2875 50  0001 C CNN
+F 2 "" H 6475 3050 50  0001 C CNN
+F 3 "" H 6475 3050 50  0001 C CNN
+	1    6475 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:AVCC #PWR028
+U 1 1 5B08C825
+P 6475 2650
+F 0 "#PWR028" H 6475 2575 50  0001 C CNN
+F 1 "AVCC" H 6475 2800 50  0000 C CNN
+F 2 "" H 6475 2650 50  0001 C CNN
+F 3 "" H 6475 2650 50  0001 C CNN
+	1    6475 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:AVCC #PWR029
+U 1 1 5B08CA98
+P 6975 3375
+F 0 "#PWR029" H 6975 3300 50  0001 C CNN
+F 1 "AVCC" H 6975 3525 50  0000 C CNN
+F 2 "" H 6975 3375 50  0001 C CNN
+F 3 "" H 6975 3375 50  0001 C CNN
+	1    6975 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:FerriteBead FB1
+U 1 1 5B08ADE2
+P 5150 2700
+F 0 "FB1" H 5150 2850 50  0000 C CNN
+F 1 "ferrite bead" H 5150 2625 50  0001 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 5150 2700 60  0001 C CNN
+F 3 "" H 5150 2700 60  0001 C CNN
+	1    5150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Capacitor C9
+U 1 1 5B08FA7F
+P 5425 2875
+F 0 "C9" H 5275 2975 50  0000 C CNN
+F 1 "1u" H 5275 2775 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 5463 2725 50  0001 C CNN
+F 3 "" H 5425 2875 50  0000 C CNN
+	1    5425 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR030
+U 1 1 5B08FA85
+P 5425 3025
+F 0 "#PWR030" H 5425 3075 50  0001 C CNN
+F 1 "GND" H 5425 2875 50  0001 C CNN
+F 2 "" H 5425 3050 50  0001 C CNN
+F 3 "" H 5425 3050 50  0001 C CNN
+	1    5425 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Conn-1x5 Z1
+U 1 1 5B53930D
+P 3025 3925
+F 0 "Z1" H 3025 4275 50  0000 C CNN
+F 1 "goldpin 1x5" H 3025 3575 50  0001 C CNN
+F 2 "project.pretty:THT_Goldpin-1x5" H 2925 3975 60  0001 C CNN
+F 3 "" H 2925 3975 60  0001 C CNN
+	1    3025 3925
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:Conn-1x5 Z2
+U 1 1 5B539888
+P 3025 4825
+F 0 "Z2" H 3025 4475 50  0000 C CNN
+F 1 "goldpin 1x5" H 3025 4475 50  0001 C CNN
+F 2 "project.pretty:THT_Goldpin-1x5" H 2925 4875 60  0001 C CNN
+F 3 "" H 2925 4875 60  0001 C CNN
+	1    3025 4825
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR031
+U 1 1 5B7997F0
+P 3700 4900
+F 0 "#PWR031" H 3700 4950 50  0001 C CNN
+F 1 "GND" H 3700 4750 50  0001 C CNN
+F 2 "" H 3700 4925 50  0001 C CNN
+F 3 "" H 3700 4925 50  0001 C CNN
+	1    3700 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 4225 2    40   BiDi ~ 0
+IOUT
+$Comp
+L project.lib:Capacitor C8
+U 1 1 5B79D50C
+P 7350 2875
+F 0 "C8" H 7525 2975 50  0000 C CNN
+F 1 "100n" H 7525 2775 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 7388 2725 50  0001 C CNN
+F 3 "" H 7350 2875 50  0000 C CNN
+	1    7350 2875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:Resistor R4
+U 1 1 5B79F9DC
+P 4200 4225
+F 0 "R4" H 4260 4325 50  0000 C CNN
+F 1 "1k" H 4135 4325 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4200 4225 60  0001 C CNN
+F 3 "" H 4200 4225 60  0001 C CNN
+	1    4200 4225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:FerriteBead FB3
+U 1 1 5B7A207A
+P 7075 2700
+F 0 "FB3" H 7075 2850 50  0000 C CNN
+F 1 "ferrite bead" H 7075 2625 50  0001 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 7075 2700 60  0001 C CNN
+F 3 "" H 7075 2700 60  0001 C CNN
+	1    7075 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR032
+U 1 1 5B7A29D4
+P 7350 3025
+F 0 "#PWR032" H 7350 3075 50  0001 C CNN
+F 1 "GND" H 7350 2875 50  0001 C CNN
+F 2 "" H 7350 3050 50  0001 C CNN
+F 3 "" H 7350 3050 50  0001 C CNN
+	1    7350 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Capacitor C1
+U 1 1 5B7AEAEE
+P 3725 2875
+F 0 "C1" H 3840 2980 50  0000 C CNN
+F 1 "10u" H 3850 2760 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 3763 2725 50  0001 C CNN
+F 3 "" H 3725 2875 50  0000 C CNN
+	1    3725 2875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:GND #PWR033
+U 1 1 5B7AEC3E
+P 3725 3025
+F 0 "#PWR033" H 3725 3075 50  0001 C CNN
+F 1 "GND" H 3725 2875 50  0001 C CNN
+F 2 "" H 3725 3050 50  0001 C CNN
+F 3 "" H 3725 3050 50  0001 C CNN
+	1    3725 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:VS #PWR034
+U 1 1 5B7BF2DA
+P 7350 2650
+F 0 "#PWR034" H 7350 2575 50  0001 C CNN
+F 1 "VS" H 7350 2800 50  0000 C CNN
+F 2 "" H 7350 2650 50  0001 C CNN
+F 3 "" H 7350 2650 50  0001 C CNN
+	1    7350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:VS #PWR035
+U 1 1 5B7BF3A3
+P 3700 4025
+F 0 "#PWR035" H 3700 3950 50  0001 C CNN
+F 1 "VS" H 3700 4175 50  0000 C CNN
+F 2 "" H 3700 4025 50  0001 C CNN
+F 3 "" H 3700 4025 50  0001 C CNN
+	1    3700 4025
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6575 3375
+$Comp
+L project.lib:INA181A1 U4
+U 1 1 5B919478
+P 3700 4375
+F 0 "U4" H 3850 4725 50  0000 C CNN
+F 1 "INA181A1" H 3700 4395 50  0000 C CNN
+F 2 "project.pretty:SMD_SOT-23-6" H 4400 5100 60  0001 C CNN
+F 3 "" H 4400 5100 60  0001 C CNN
+	1    3700 4375
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6775 3375
+Text GLabel 5825 3400 2    40   BiDi ~ 0
+AREF
+Text GLabel 6675 3375 1    40   BiDi ~ 0
+AREF
+Text Label 3375 3300 0    40   ~ 0
+TWI_SCL
+Text Label 3375 3550 0    40   ~ 0
+TWI_SDA
+Text Label 3500 5125 0    40   ~ 0
+UART_TxD
+Text Label 3225 5325 1    40   ~ 0
+UART_RxD
+Text Label 5900 4875 1    40   ~ 0
+PDI_CLK
+Text Label 5700 4850 1    40   ~ 0
+PDI_DATA
+$Comp
+L project.lib:Resistor R10
+U 1 1 5BC971F2
+P 4875 5000
+F 0 "R10" V 4925 5150 50  0000 C CNN
+F 1 "50k" V 4825 5150 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4875 5000 60  0001 C CNN
+F 3 "" H 4875 5000 60  0001 C CNN
+	1    4875 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project.lib:VCC #PWR036
+U 1 1 5BC2CFC0
+P 5425 2650
+F 0 "#PWR036" H 5425 2575 50  0001 C CNN
+F 1 "VCC" H 5425 2800 50  0000 C CNN
+F 2 "" H 5425 2625 50  0001 C CNN
+F 3 "" H 5425 2625 50  0001 C CNN
+	1    5425 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:VCC #PWR037
+U 1 1 5BC2D3EA
+P 5925 2650
+F 0 "#PWR037" H 5925 2575 50  0001 C CNN
+F 1 "VCC" H 5925 2800 50  0000 C CNN
+F 2 "" H 5925 2625 50  0001 C CNN
+F 3 "" H 5925 2625 50  0001 C CNN
+	1    5925 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:VCC #PWR038
+U 1 1 5BC2D69F
+P 7500 3450
+F 0 "#PWR038" H 7500 3375 50  0001 C CNN
+F 1 "VCC" H 7500 3600 50  0000 C CNN
+F 2 "" H 7500 3425 50  0001 C CNN
+F 3 "" H 7500 3425 50  0001 C CNN
+	1    7500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:VCC #PWR039
+U 1 1 5BC2DD49
+P 6375 3375
+F 0 "#PWR039" H 6375 3300 50  0001 C CNN
+F 1 "VCC" H 6375 3525 50  0000 C CNN
+F 2 "" H 6375 3350 50  0001 C CNN
+F 3 "" H 6375 3350 50  0001 C CNN
+	1    6375 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:VCC #PWR040
+U 1 1 5BC2E628
+P 5500 4925
+F 0 "#PWR040" H 5500 4850 50  0001 C CNN
+F 1 "VCC" H 5500 5075 50  0000 C CNN
+F 2 "" H 5500 4900 50  0001 C CNN
+F 3 "" H 5500 4900 50  0001 C CNN
+	1    5500 4925
+	1    0    0    -1  
+$EndComp
+Text Label 3350 4225 1    40   ~ 0
+I+
+Text Label 3350 4525 3    40   ~ 0
+I-
+Text Label 5500 4125 0    40   ~ 0
+VOUT
+Text Label 5500 4225 0    40   ~ 0
+VREF
+$Comp
+L project.lib:PWR_FLAG #FLG041
+U 1 1 5BC1F5FC
+P 6575 7550
+F 0 "#FLG041" H 6575 7625 50  0001 C CNN
+F 1 "PWR_FLAG" H 6575 7700 50  0000 C CNN
+F 2 "" H 6575 7550 50  0001 C CNN
+F 3 "" H 6575 7550 50  0001 C CNN
+	1    6575 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:PWR_FLAG #FLG042
+U 1 1 5BC1F6C5
+P 6150 7525
+F 0 "#FLG042" H 6150 7600 50  0001 C CNN
+F 1 "PWR_FLAG" H 6150 7675 50  0000 C CNN
+F 2 "" H 6150 7525 50  0001 C CNN
+F 3 "" H 6150 7525 50  0001 C CNN
+	1    6150 7525
+	-1   0    0    1   
+$EndComp
+$Comp
+L project.lib:GND #PWR043
+U 1 1 5BC1F87B
+P 6575 7550
+F 0 "#PWR043" H 6575 7600 50  0001 C CNN
+F 1 "GND" H 6575 7400 50  0001 C CNN
+F 2 "" H 6575 7575 50  0001 C CNN
+F 3 "" H 6575 7575 50  0001 C CNN
+	1    6575 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:PWR_FLAG #FLG044
+U 1 1 5BC232CD
+P 5725 7525
+F 0 "#FLG044" H 5725 7600 50  0001 C CNN
+F 1 "PWR_FLAG" H 5725 7675 50  0000 C CNN
+F 2 "" H 5725 7525 50  0001 C CNN
+F 3 "" H 5725 7525 50  0001 C CNN
+	1    5725 7525
+	-1   0    0    1   
+$EndComp
+$Comp
+L project.lib:PWR_FLAG #FLG045
+U 1 1 5BC2379E
+P 5300 7525
+F 0 "#FLG045" H 5300 7600 50  0001 C CNN
+F 1 "PWR_FLAG" H 5300 7675 50  0000 C CNN
+F 2 "" H 5300 7525 50  0001 C CNN
+F 3 "" H 5300 7525 50  0001 C CNN
+	1    5300 7525
+	-1   0    0    1   
+$EndComp
+$Comp
+L project.lib:VCC #PWR046
+U 1 1 5BC237A4
+P 5300 7525
+F 0 "#PWR046" H 5300 7450 50  0001 C CNN
+F 1 "VCC" H 5300 7675 50  0000 C CNN
+F 2 "" H 5300 7500 50  0001 C CNN
+F 3 "" H 5300 7500 50  0001 C CNN
+	1    5300 7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:VS #PWR047
+U 1 1 5BC23B01
+P 6150 7525
+F 0 "#PWR047" H 6150 7450 50  0001 C CNN
+F 1 "VS" H 6150 7675 50  0000 C CNN
+F 2 "" H 6150 7525 50  0001 C CNN
+F 3 "" H 6150 7525 50  0001 C CNN
+	1    6150 7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:AVCC #PWR048
+U 1 1 5BC23D31
+P 5725 7525
+F 0 "#PWR048" H 5725 7450 50  0001 C CNN
+F 1 "AVCC" H 5725 7675 50  0000 C CNN
+F 2 "" H 5725 7525 50  0001 C CNN
+F 3 "" H 5725 7525 50  0001 C CNN
+	1    5725 7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:PWR_FLAG #FLG049
+U 1 1 5BC27DAB
+P 4875 7525
+F 0 "#FLG049" H 4875 7600 50  0001 C CNN
+F 1 "PWR_FLAG" H 4875 7675 50  0000 C CNN
+F 2 "" H 4875 7525 50  0001 C CNN
+F 3 "" H 4875 7525 50  0001 C CNN
+	1    4875 7525
+	-1   0    0    1   
+$EndComp
+$Comp
+L project.lib:VIN #PWR050
+U 1 1 5BC282F6
+P 4875 7525
+F 0 "#PWR050" H 4875 7450 50  0001 C CNN
+F 1 "VIN" H 4875 7675 50  0000 C CNN
+F 2 "" H 4875 7525 50  0001 C CNN
+F 3 "" H 4875 7525 50  0001 C CNN
+	1    4875 7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Resistor R14
+U 1 1 5BDF5CB5
+P 4275 4525
+F 0 "R14" H 4325 4425 50  0000 C CNN
+F 1 "1k" H 4175 4425 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 4275 4525 60  0001 C CNN
+F 3 "" H 4275 4525 60  0001 C CNN
+	1    4275 4525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L project.lib:VS #PWR051
+U 1 1 5BDF6B84
+P 4500 4475
+F 0 "#PWR051" H 4500 4400 50  0001 C CNN
+F 1 "VS" H 4500 4625 50  0000 C CNN
+F 2 "" H 4500 4475 50  0001 C CNN
+F 3 "" H 4500 4475 50  0001 C CNN
+	1    4500 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Diode D12
+U 1 1 5BDF8DB5
+P 4075 4775
+F 0 "D12" V 4075 4625 50  0000 C CNN
+F 1 "1N4148" H 4075 4625 50  0001 C CNN
+F 2 "project.pretty:SMD_SOD-323" H 4075 4775 50  0001 C CNN
+F 3 "" H 4075 4775 50  0000 C CNN
+	1    4075 4775
+	0    1    1    0   
+$EndComp
+$Comp
+L project.lib:GND #PWR052
+U 1 1 5BDF9D81
+P 4075 4900
+F 0 "#PWR052" H 4075 4950 50  0001 C CNN
+F 1 "GND" H 4075 4750 50  0001 C CNN
+F 2 "" H 4075 4925 50  0001 C CNN
+F 3 "" H 4075 4925 50  0001 C CNN
+	1    4075 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6025 4425 0    40   BiDi ~ 0
+IREF
+Text GLabel 4150 4375 2    40   BiDi ~ 0
+IREF
+$Comp
+L project.lib:VCC #PWR053
+U 1 1 5BC2D79F
+P 6800 2650
+F 0 "#PWR053" H 6800 2575 50  0001 C CNN
+F 1 "VCC" H 6800 2800 50  0000 C CNN
+F 2 "" H 6800 2625 50  0001 C CNN
+F 3 "" H 6800 2625 50  0001 C CNN
+	1    6800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 5575 6225 5600
+Wire Wire Line
+	6225 5600 6525 5600
+Wire Wire Line
+	7125 5600 7125 5575
+Wire Wire Line
+	6825 5575 6825 5600
+Connection ~ 6825 5600
+Wire Wire Line
+	6525 5575 6525 5600
+Connection ~ 6525 5600
+Wire Wire Line
+	3225 4550 3225 4625
+Wire Wire Line
+	3225 4125 3225 4200
+Connection ~ 3225 4625
+Connection ~ 3225 4125
+Wire Wire Line
+	5075 4775 5075 4905
+Wire Wire Line
+	4825 4775 4875 4775
+Wire Wire Line
+	4875 4825 4875 4775
+Connection ~ 4875 4775
+Wire Wire Line
+	5075 5175 5075 5105
+Connection ~ 5075 4775
+Wire Wire Line
+	4825 3975 4875 3975
+Wire Wire Line
+	4875 4025 4875 3975
+Connection ~ 4875 3975
+Connection ~ 5075 3975
+Wire Wire Line
+	5075 3975 5075 4095
+Wire Wire Line
+	5075 4375 5075 4295
+Wire Wire Line
+	4475 5325 4525 5325
+Wire Wire Line
+	4525 5400 4525 5325
+Connection ~ 4525 5325
+Wire Wire Line
+	4525 5600 4525 5650
+Wire Wire Line
+	3700 5325 3750 5325
+Wire Wire Line
+	3750 5400 3750 5325
+Connection ~ 3750 5325
+Wire Wire Line
+	3750 5600 3750 5650
+Wire Wire Line
+	4000 3550 4050 3550
+Wire Wire Line
+	4050 3625 4050 3550
+Connection ~ 4050 3550
+Wire Wire Line
+	4050 3825 4050 3875
+Wire Wire Line
+	4550 3300 4600 3300
+Wire Wire Line
+	4600 3375 4600 3300
+Connection ~ 4600 3300
+Wire Wire Line
+	4600 3575 4600 3625
+Wire Wire Line
+	5400 3850 5400 3875
+Wire Wire Line
+	5400 3875 5500 3875
+Wire Wire Line
+	5600 3875 5600 3850
+Wire Wire Line
+	5500 3850 5500 3875
+Connection ~ 5500 3875
+Wire Wire Line
+	5150 3500 5175 3500
+Wire Wire Line
+	5150 3350 5150 3400
+Wire Wire Line
+	5150 3400 5175 3400
+Connection ~ 5150 3400
+Wire Wire Line
+	4025 2700 4025 2775
+Wire Wire Line
+	3375 2700 3450 2700
+Connection ~ 4025 2700
+Wire Wire Line
+	4750 2700 4875 2700
+Connection ~ 4875 2700
+Wire Wire Line
+	2975 2650 2975 2700
+Wire Wire Line
+	2975 2700 3025 2700
+Wire Wire Line
+	3450 2775 3450 2700
+Connection ~ 3450 2700
+Wire Wire Line
+	3700 4825 3200 4825
+Wire Wire Line
+	5500 5650 5500 5575
+Wire Wire Line
+	5500 5575 5450 5575
+Wire Wire Line
+	5450 5475 5500 5475
+Wire Wire Line
+	5500 5275 5500 5475
+Connection ~ 5500 5475
+Wire Wire Line
+	5700 5375 5450 5375
+Wire Wire Line
+	5925 2650 5925 2700
+Wire Wire Line
+	6400 2700 6475 2700
+Wire Wire Line
+	6475 2650 6475 2700
+Connection ~ 6475 2700
+Wire Wire Line
+	4875 2700 4875 2775
+Wire Wire Line
+	6000 2700 5925 2700
+Connection ~ 5925 2700
+Wire Wire Line
+	5425 2650 5425 2700
+Wire Wire Line
+	5425 2700 5350 2700
+Connection ~ 5425 2700
+Wire Wire Line
+	6875 2700 6800 2700
+Wire Wire Line
+	7275 2700 7350 2700
+Wire Wire Line
+	7350 2650 7350 2700
+Connection ~ 7350 2700
+Wire Wire Line
+	3225 4025 3200 4025
+Wire Wire Line
+	3225 4725 3200 4725
+Wire Wire Line
+	3725 2700 3725 2775
+Connection ~ 3725 2700
+Wire Wire Line
+	3700 4725 3700 4825
+Wire Wire Line
+	6675 5650 6675 5600
+Connection ~ 6675 5600
+Wire Wire Line
+	7125 5100 7125 5175
+Wire Wire Line
+	6725 5150 6825 5150
+Wire Wire Line
+	6825 5150 6825 5175
+Wire Wire Line
+	6525 5150 6525 5175
+Wire Wire Line
+	6225 5100 6225 5175
+Wire Wire Line
+	3200 3925 3475 3925
+Wire Wire Line
+	3475 3925 3475 3875
+Wire Wire Line
+	5700 5375 5700 5275
+Wire Wire Line
+	3375 4225 3350 4225
+Wire Wire Line
+	3350 4225 3350 4125
+Wire Wire Line
+	3350 4625 3350 4525
+Wire Wire Line
+	3350 4525 3375 4525
+Wire Wire Line
+	3200 4625 3225 4625
+Wire Wire Line
+	3350 4125 3225 4125
+Connection ~ 3700 4825
+Wire Wire Line
+	3450 3025 3450 2975
+Wire Wire Line
+	3725 3025 3725 2975
+Wire Wire Line
+	4025 3025 4025 2975
+Wire Wire Line
+	4450 3025 4450 3000
+Wire Wire Line
+	4875 3025 4875 2975
+Wire Wire Line
+	5425 3025 5425 2975
+Wire Wire Line
+	5925 3025 5925 2975
+Wire Wire Line
+	6475 3025 6475 2975
+Wire Wire Line
+	7350 3025 7350 2975
+Wire Wire Line
+	6525 5100 6525 4975
+Wire Wire Line
+	6825 4975 6825 5100
+Wire Wire Line
+	6625 4975 6625 5150
+Wire Wire Line
+	6625 5150 6525 5150
+Wire Wire Line
+	6725 5150 6725 4975
+Wire Wire Line
+	6825 5100 7125 5100
+Wire Wire Line
+	6525 5100 6225 5100
+Wire Wire Line
+	7825 3550 7825 3525
+Connection ~ 7725 3550
+Wire Wire Line
+	7500 3450 7500 3550
+Wire Wire Line
+	7725 3550 7725 3525
+Wire Wire Line
+	7925 3525 7925 3625
+Wire Wire Line
+	7925 3625 7825 3625
+Wire Wire Line
+	7825 3625 7825 3675
+Wire Wire Line
+	8525 3900 8525 3525
+Wire Wire Line
+	4200 3300 3225 3300
+Wire Wire Line
+	3225 3300 3225 3725
+Wire Wire Line
+	3225 3725 3200 3725
+Wire Wire Line
+	3200 3825 3325 3825
+Wire Wire Line
+	3325 3825 3325 3550
+Wire Wire Line
+	3325 3550 3650 3550
+Wire Wire Line
+	3200 5025 3225 5025
+Wire Wire Line
+	3225 5325 3350 5325
+Wire Wire Line
+	3200 4925 3325 4925
+Wire Wire Line
+	3325 4925 3325 5125
+Wire Wire Line
+	4075 5325 4125 5325
+Wire Wire Line
+	3325 5125 4075 5125
+Wire Wire Line
+	3225 5025 3225 5325
+Wire Wire Line
+	5900 4625 6025 4625
+Wire Wire Line
+	5700 4925 5700 4525
+Wire Wire Line
+	5700 4525 6025 4525
+Wire Wire Line
+	5900 4925 5900 4625
+Wire Wire Line
+	5900 5475 5900 5275
+Wire Wire Line
+	5300 3975 5300 4125
+Wire Wire Line
+	5300 4775 5300 4225
+Wire Wire Line
+	5300 4125 6025 4125
+Wire Wire Line
+	5300 4225 6025 4225
+Wire Wire Line
+	4500 4475 4500 4525
+Wire Wire Line
+	4500 4525 4450 4525
+Wire Wire Line
+	4025 4525 4075 4525
+Wire Wire Line
+	4075 4375 4075 4525
+Connection ~ 4075 4525
+Wire Wire Line
+	4400 4225 4375 4225
+Wire Wire Line
+	4075 4900 4075 4875
+Wire Wire Line
+	4075 4375 4150 4375
+Wire Wire Line
+	6800 2700 6800 2650
+$Comp
+L project.lib:VCC #PWR054
+U 1 1 5BC2DC47
+P 5150 3350
+F 0 "#PWR054" H 5150 3275 50  0001 C CNN
+F 1 "VCC" H 5150 3500 50  0000 C CNN
+F 2 "" H 5150 3325 50  0001 C CNN
+F 3 "" H 5150 3325 50  0001 C CNN
+	1    5150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 5600 7125 5600
+Wire Wire Line
+	6525 5600 6675 5600
+Wire Wire Line
+	3225 4625 3350 4625
+Wire Wire Line
+	3225 4125 3200 4125
+Wire Wire Line
+	4875 4775 5075 4775
+Wire Wire Line
+	5075 4775 5300 4775
+Wire Wire Line
+	4875 3975 5075 3975
+Wire Wire Line
+	5075 3975 5300 3975
+Wire Wire Line
+	4525 5325 4575 5325
+Wire Wire Line
+	3750 5325 3800 5325
+Wire Wire Line
+	4050 3550 4100 3550
+Wire Wire Line
+	4600 3300 4650 3300
+Wire Wire Line
+	5500 3875 5600 3875
+Wire Wire Line
+	5500 3875 5500 3925
+Wire Wire Line
+	5150 3400 5150 3500
+Wire Wire Line
+	4025 2700 4150 2700
+Wire Wire Line
+	4875 2700 4950 2700
+Wire Wire Line
+	3450 2700 3725 2700
+Wire Wire Line
+	5500 5475 5900 5475
+Wire Wire Line
+	6475 2700 6475 2775
+Wire Wire Line
+	5925 2700 5925 2775
+Wire Wire Line
+	5425 2700 5425 2775
+Wire Wire Line
+	7350 2700 7350 2775
+Wire Wire Line
+	3725 2700 4025 2700
+Wire Wire Line
+	6675 5600 6825 5600
+Wire Wire Line
+	3700 4825 3700 4900
+Wire Wire Line
+	7725 3550 7825 3550
+Wire Wire Line
+	4075 4525 4100 4525
+Wire Wire Line
+	4075 4525 4075 4675
+$Comp
+L project.lib:LED D11
+U 1 1 5C7A8CC8
+P 8275 5300
+F 0 "D11" H 8425 5225 50  0000 C CNN
+F 1 "LED-B" H 8275 5150 50  0001 C CNN
+F 2 "project.pretty:SMD_2012_(0805)+" H 8275 5300 50  0001 C CNN
+F 3 "" H 8275 5300 50  0001 C CNN
+	1    8275 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L project.lib:LED D9
+U 1 1 5C7B0263
+P 8275 4850
+F 0 "D9" H 8425 4775 50  0000 C CNN
+F 1 "LED-G" H 8275 4700 50  0001 C CNN
+F 2 "project.pretty:SMD_2012_(0805)+" H 8275 4850 50  0001 C CNN
+F 3 "" H 8275 4850 50  0001 C CNN
+	1    8275 4850
+	1    0    0    1   
+$EndComp
+$Comp
+L project.lib:LED D8
+U 1 1 5C7B7156
+P 8275 4625
+F 0 "D8" H 8425 4550 50  0000 C CNN
+F 1 "LED-G" H 8275 4475 50  0001 C CNN
+F 2 "project.pretty:SMD_2012_(0805)+" H 8275 4625 50  0001 C CNN
+F 3 "" H 8275 4625 50  0001 C CNN
+	1    8275 4625
+	1    0    0    1   
+$EndComp
+$Comp
+L project.lib:Resistor R15
+U 1 1 5C81C947
+P 7975 4175
+F 0 "R15" H 8060 4270 50  0000 C CNN
+F 1 "1k" H 7885 4270 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 7975 4175 60  0001 C CNN
+F 3 "" H 7975 4175 60  0001 C CNN
+	1    7975 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Resistor R16
+U 1 1 5C81C94D
+P 7975 4400
+F 0 "R16" H 8060 4495 50  0000 C CNN
+F 1 "1k" H 7885 4495 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 7975 4400 60  0001 C CNN
+F 3 "" H 7975 4400 60  0001 C CNN
+	1    7975 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:Resistor R19
+U 1 1 5C81C953
+P 7975 5075
+F 0 "R19" H 8060 5170 50  0000 C CNN
+F 1 "100" H 7885 5170 50  0000 C CNN
+F 2 "project.pretty:SMD_2012_(0805)" H 7975 5075 60  0001 C CNN
+F 3 "" H 7975 5075 60  0001 C CNN
+	1    7975 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L project.lib:LED D6
+U 1 1 5C81C95C
+P 8275 4175
+F 0 "D6" H 8425 4100 50  0000 C CNN
+F 1 "LED-G" H 8275 4025 50  0001 C CNN
+F 2 "project.pretty:SMD_2012_(0805)+" H 8275 4175 50  0001 C CNN
+F 3 "" H 8275 4175 50  0001 C CNN
+	1    8275 4175
+	1    0    0    1   
+$EndComp
+$Comp
+L project.lib:LED D7
+U 1 1 5C81C962
+P 8275 4400
+F 0 "D7" H 8425 4325 50  0000 C CNN
+F 1 "LED-G" H 8275 4250 50  0001 C CNN
+F 2 "project.pretty:SMD_2012_(0805)+" H 8275 4400 50  0001 C CNN
+F 3 "" H 8275 4400 50  0001 C CNN
+	1    8275 4400
+	1    0    0    1   
+$EndComp
+$Comp
+L project.lib:LED D10
+U 1 1 5C81C968
+P 8275 5075
+F 0 "D10" H 8425 5000 50  0000 C CNN
+F 1 "LED-B" H 8275 4925 50  0001 C CNN
+F 2 "project.pretty:SMD_2012_(0805)+" H 8275 5075 50  0001 C CNN
+F 3 "" H 8275 5075 50  0001 C CNN
+	1    8275 5075
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8375 4175 8525 4175
+Wire Wire Line
+	8525 4175 8525 4400
+Wire Wire Line
+	8375 5300 8525 5300
+Connection ~ 8525 5300
+Wire Wire Line
+	8525 5300 8525 5425
+Wire Wire Line
+	8375 5075 8525 5075
+Connection ~ 8525 5075
+Wire Wire Line
+	8525 5075 8525 5300
+Wire Wire Line
+	8375 4850 8525 4850
+Connection ~ 8525 4850
+Wire Wire Line
+	8525 4850 8525 5075
+Wire Wire Line
+	8375 4625 8525 4625
+Connection ~ 8525 4625
+Wire Wire Line
+	8525 4625 8525 4850
+Wire Wire Line
+	8375 4400 8525 4400
+Connection ~ 8525 4400
+Wire Wire Line
+	8525 4400 8525 4625
+$Comp
+L project.lib:GND #PWR022
+U 1 1 5C855A52
+P 8525 5425
+F 0 "#PWR022" H 8525 5475 50  0001 C CNN
+F 1 "GND" H 8525 5275 50  0001 C CNN
+F 2 "" H 8525 5450 50  0001 C CNN
+F 3 "" H 8525 5450 50  0001 C CNN
+	1    8525 5425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5300 7350 5300
+Wire Wire Line
+	7350 5300 7350 4675
+Wire Wire Line
+	7350 4675 7325 4675
+Wire Wire Line
+	7800 5075 7450 5075
+Wire Wire Line
+	7450 5075 7450 4575
+Wire Wire Line
+	7450 4575 7325 4575
+Wire Wire Line
+	7800 4850 7550 4850
+Wire Wire Line
+	7550 4850 7550 4475
+Wire Wire Line
+	7550 4475 7325 4475
+Wire Wire Line
+	7800 4625 7650 4625
+Wire Wire Line
+	7650 4625 7650 4375
+Wire Wire Line
+	7650 4375 7325 4375
+Wire Wire Line
+	7800 4400 7750 4400
+Wire Wire Line
+	7750 4400 7750 4275
+Wire Wire Line
+	7750 4275 7325 4275
+Wire Wire Line
+	7800 4175 7325 4175
+Wire Wire Line
+	8150 4175 8175 4175
+Wire Wire Line
+	8175 5075 8150 5075
+Wire Wire Line
+	8175 4400 8150 4400
+Wire Wire Line
+	8175 4625 8150 4625
+Wire Wire Line
+	8175 5300 8150 5300
+Wire Wire Line
+	8150 4850 8175 4850
+Wire Wire Line
+	7825 3900 7825 3875
+Wire Wire Line
+	7500 3550 7725 3550
+Wire Wire Line
+	4075 5125 4075 5325
+$EndSCHEMATC
